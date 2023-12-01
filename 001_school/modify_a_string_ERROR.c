@@ -2,16 +2,14 @@
 
 /**
  * main - Entry point
- * Here, the memory that stores the string is only readable
- * because we used pointer. It can not be modified
+ * Here, the memory that stores the sring is both readable and writeable
+ * because we used ARRAY
  * Return: Always 0;
  */
 void ade(void)
 {
-	char *str;
-
-	str = "Olagunju";
-	str[0] = 'W';
+	char *str = "Olagunju";
+	str[8] = 'W';
 
 	printf("%s\n", str);
 }
